@@ -1,0 +1,115 @@
+{
+    "home-header": {
+        "shit1": "Medical specialist",
+        "shit2": "Find a doctor by specialty",
+        "shit3": "Health facilaties",
+        "shit4": "Find a good one",
+        "shit5": "Doctors",
+        "shit6": "Choose a great doctor",
+        "shit7": "Fee",
+        "shit8": "physical and emotional test",
+        "shit9": "support",
+        "welcum": "well cum "
+    },
+    "banner": {
+        "t1": "another stuff",
+        "t2": "English stuff",
+        "t3": "English stuff",
+        "t4": "English stuff",
+        "t5": "English stuff",
+        "t6": "English stuff",
+        "t7": "English stuff",
+        "t8": "English stuff"
+    },
+    "menu": {
+        "admin": {
+            "manage-shit": "manage user",
+            "manage-doctor": "Manage doctor",
+            "manage-admin": "Manage admin",
+            "crud": "CRUD user",
+            "crud-redux": "CRUD redux",
+            "clinic": "Clinic",
+            "manage-clinic": "Manage clinic",
+            "specialty": "Specialty",
+            "manage-specialty": "Manage specialty",
+            "handbook": "Hand book",
+            "manage-handbook": "Manage handbook"
+        },
+        "doctor": {
+            "doctor": "Doctor",
+            "manage-schedule": "Manage Doctor schedule",
+            "manage-patient": "Manage patient schedule"
+        }
+    },
+    "manage-user": {
+        "add": "add new staff",
+        "editadd": "Edit info",
+        "password": "password",
+        "firstname": "first name",
+        "lastname": "last name",
+        "phonenumber": "phone number",
+        "address": "address",
+        "gender": "gender",
+        "position": "position",
+        "avatar": "Avatar",
+        "confirm": "confirm",
+        "edit": "confirm edition"
+    },
+    "homepage": {
+        "best-doc": "Out standing Doctor",
+        "specialty": "Specialty",
+        "more": "More info"
+    },
+    "manage-schedule": {
+        "title": "Manage Doctor Schedule",
+        "choose-dr": "choose doctor",
+        "choose-date": "choose date",
+        "save-info": "Save info"
+    },
+    "patient": {
+        "detail-doctor": {
+            "schedule": "Schedule",
+            "fucktime": "FUCKKKKKK TIME",
+            "choose": "choose ",
+            "andfuckfree": " and fuck (free)"
+        },
+        "extra-info-doctor": {
+            "text-address": "Adress",
+            "price": "PRICE",
+            "detail": "Detail",
+            "payment": "All payment method",
+            "hide": "Hide"
+        },
+        "booking-modal": {
+            "title": "Schedule info",
+            "fullname": "Full name",
+            "phonenumber": "Phone number",
+            "email": "Email",
+            "address": "Adress",
+            "reason": "Reason",
+            "birthday": "Birthday",
+            "sex": "Sex",
+            "confirm": "Confirm",
+            "cancel": "Cancel",
+            "intro": "Free bl*wjob",
+            "price": "PRICE "
+        }
+    },
+    "admin": {
+        "manage-doctor": {
+            "title": "Create doctor info",
+            "title2": "Choose porn star",
+            "title3": "More info <3",
+            "save": "Save",
+            "create": "Create",
+            "shit1": "price",
+            "shit2": "payment method",
+            "shit3": "State",
+            "shit4": "clinic",
+            "shit5": "clinic address",
+            "shit6": "note",
+            "specialty": "Specialty",
+            "clinic": "Clinic"
+        }
+    }
+}

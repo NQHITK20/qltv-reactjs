@@ -1,0 +1,115 @@
+{
+    "home-header": {
+        "shit1": "Chuyên Khoa",
+        "shit2": "Tìm bác sĩ theo chuyên khoa",
+        "shit3": "Cơ sở y tế",
+        "shit4": "Chọn bệnh viện phòng khám",
+        "shit5": "Bác sĩ",
+        "shit6": "Chọn bác sĩ giỏi",
+        "shit7": "Gói khám",
+        "shit8": "Khám sức khỏe tổng quát",
+        "shit9": "Hỗ trợ",
+        "welcum": "á đù anh "
+    },
+    "banner": {
+        "t1": "NỀN TẢNG Y TẾ",
+        "t2": "CHĂM SÓC SỨC KHỎE TOÀN DIỆN",
+        "t3": "Khám chuyên khoa",
+        "t4": "Khám từ xa",
+        "t5": "Khám tổng quát",
+        "t6": "Xét nghiệm y học",
+        "t7": "Sức khỏe tinh thần",
+        "t8": "Khám tổng quát"
+    },
+    "menu": {
+        "admin": {
+            "manage-shit": "Quản lý người dùng",
+            "manage-doctor": "Quản lý bác sĩ",
+            "manage-admin": "Quản lý admin",
+            "crud": "CRUD user",
+            "crud-redux": "CRUD redux",
+            "clinic": "phòng khám",
+            "manage-clinic": "Quản lý phòng khám",
+            "specialty": "Chuyên khoa",
+            "manage-specialty": "Quản lý chuyên khoa",
+            "handbook": "Cẩm nang",
+            "manage-handbook": "Quản lý cẩm nang"
+        },
+        "doctor": {
+            "doctor": "Bác sĩ",
+            "manage-schedule": "Quản lý khám bệnh",
+            "manage-patient": "Quản lý Khám bệnh nhân"
+        }
+    },
+    "manage-user": {
+        "add": "Thêm mới người dùng",
+        "editadd": "Sửa thông tin người dùng",
+        "password": "mật khẩu",
+        "firstname": "Tên",
+        "lastname": "Họ",
+        "phonenumber": "Số điện thoại",
+        "address": "Địa chỉ",
+        "gender": "giới tính",
+        "position": "Chức danh",
+        "avatar": "Ảnh đại diện",
+        "confirm": "xác nhận",
+        "edit": "Lưu thay đổi"
+    },
+    "homepage": {
+        "best-doc": "Bác sĩ nổi bật tuần qua",
+        "specialty": "Chuyên khoa phổ biến",
+        "more": "Xem thêm"
+    },
+    "manage-schedule": {
+        "title": "Quản lý kế hoạch khám bệnh của bác sĩ",
+        "choose-dr": "Chọn bác sĩ",
+        "choose-date": "Chọn ngày khám",
+        "save-info": "Lưu thông tin"
+    },
+    "patient": {
+        "detail-doctor": {
+            "schedule": "Lịch khám",
+            "fucktime": "Bác sĩ bận đi đ* r",
+            "choose": "chọn ",
+            "andfuckfree": " và khám (miễn phí)"
+        },
+        "extra-info-doctor": {
+            "text-address": "Địa chỉ khám",
+            "price": "GIÁ KHÁM",
+            "detail": "Xem chi tiết",
+            "payment": "Các hình thức chi trả",
+            "hide": "Ẩn bớt"
+        },
+        "booking-modal": {
+            "title": "Thông tin đặt lịch khám bệnh",
+            "fullname": "Họ tên",
+            "phonenumber": "Số điện thoại",
+            "email": "địa chỉ email",
+            "address": "Địa chỉ liên hệ",
+            "reason": "Lý do khám",
+            "birthday": "Ngày sinh",
+            "sex": "Giới tính",
+            "confirm": "Xác nhận",
+            "cancel": "Hủy",
+            "intro": "Miễn phí buscu ",
+            "price": "GIÁ KHÁM"
+        }
+    },
+    "admin": {
+        "manage-doctor": {
+            "title": "Tạo thêm thông tin bác sĩ",
+            "title2": "Chọn bác sĩ",
+            "title3": "Thông tin giới thiệu",
+            "save": "Xác nhận lưu",
+            "create": "Tạo thông tin",
+            "shit1": "Chọn giá",
+            "shit2": "Chọn phương thức thanh toán",
+            "shit3": "Chọn tỉnh thành",
+            "shit4": "Tên phòng khám",
+            "shit5": "Địa chỉ phòng khám",
+            "shit6": "Lưu ý",
+            "specialty": "Chuyên khoa",
+            "clinic": "Phòng khám"
+        }
+    }
+}
