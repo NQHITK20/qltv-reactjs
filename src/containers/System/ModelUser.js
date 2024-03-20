@@ -9,11 +9,12 @@ class ModalUser extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            email: '',
+            fullname: '',
+            username: '',
             password: '',
-            firstName: '',
-            lastName: '',
-            address: '',
+            email: '',
+            role: '',
+            description: '',
         }
         this.listenToEmiiter();
     }
@@ -22,17 +23,18 @@ class ModalUser extends Component {
         emitter.on('EVENT_CLEAR_MODAL_DATA', () => {
             //reset state
             this.setState({
-                email: '',
+                fullname: '',
+                username: '',
                 password: '',
-                firstName: '',
-                lastName: '',
-                address: '',
+                email: '',
+                role: '',
+                description: '',
             })
         })
     }
 
     componentDidMount() {
-        console.log('mouting modal')
+        
     }
 
     toggle = () => {
@@ -48,14 +50,19 @@ class ModalUser extends Component {
             ...copyState
         })
     }
-
+    // fullname: '',
+    // username: '',
+    // password: '',
+    // email: '',
+    // role: '',
+    // descriotion: '',
     checkValidateInput = () => {
         let check = true
-        let arrInput = ['email', 'password', 'firstName', 'lastName', 'address'];
+        let arrInput = ['fullname', 'username', 'password', 'email','description'];
         for (let i = 0; i < arrInput.length; i++) {
             if (!this.state[arrInput[i]]) {
                 check = false
-                alert('missing parameter: ' + arrInput[i]);
+                alert('Thiếu phần: ' + arrInput[i]);
                 break;
             }
         }
@@ -76,37 +83,43 @@ class ModalUser extends Component {
                 isOpen={this.props.isOpen} togle={() => { this.toggle() }} className={'ModalContainer'}
                 size="lg"
             >
-
                 <ModalHeader togle={() => { this.toggle() }}>
-                    Create  user
+                    Tạo tài khoản
                 </ModalHeader>
                 <ModalBody>
                     <div className='modal-user-body'>
                         <div className='input-container'>
+                            <label>Họ và Tên</label>
+                            <input type='text' onChange={(event) => { this.handleOnchangeInput(event, "fullname") }} value={this.state.fullname} />
+                        </div>
+                        <div className='input-container'>
+                            <label>Tài khoản</label>
+                            <input type='text' onChange={(event) => { this.handleOnchangeInput(event, "username") }} value={this.state.username} />
+                        </div>
+                        <div className='input-container'>
+                            <label>Mật khẩu</label>
+                            <input type='text' onChange={(event) => { this.handleOnchangeInput(event, "password") }} value={this.state.password} />
+                        </div>
+                        <div className='input-container'>
                             <label>Email</label>
-                            <input type='text' onChange={(event) => { this.handleOnchangeInput(event, "email") }} value={this.state.email} />
+                            <input type='email' onChange={(event) => { this.handleOnchangeInput(event, "email") }} value={this.state.email} />
                         </div>
                         <div className='input-container'>
-                            <label>Password</label>
-                            <input type='password' onChange={(event) => { this.handleOnchangeInput(event, "password") }} value={this.state.password} />
+                            <label>Thông tin thêm</label>
+                            <input type='text' onChange={(event) => { this.handleOnchangeInput(event, "description") }} value={this.state.description} />
                         </div>
                         <div className='input-container'>
-                            <label>First name</label>
-                            <input type='text' onChange={(event) => { this.handleOnchangeInput(event, "firstName") }} value={this.state.firstName} />
-                        </div>
-                        <div className='input-container'>
-                            <label>Last name</label>
-                            <input type='text' onChange={(event) => { this.handleOnchangeInput(event, "lastName") }} value={this.state.lastName} />
-                        </div>
-                        <div className='input-container max-width-input'>
-                            <label>Address</label>
-                            <input type='text' onChange={(event) => { this.handleOnchangeInput(event, "address") }} value={this.state.address} />
+                            <label>Vai trò</label>
+                            <select classname="" id="cars" >
+                                 <option value="1">Admin</option>
+                                 <option value="2">User</option>
+                            </select>
                         </div>
                     </div>
                 </ModalBody>
                 <ModalFooter>
-                    <Button color='primary' className='px-3' onClick={() => { this.handleAddNewUser() }}> Confirm</Button>{' '}
-                    <Button color='secondary' className='px-3' onClick={() => { this.toggle() }}> Close</Button>
+                    <Button color='primary' className='px-3' onClick={() => { this.handleAddNewUser() }}> Xác nhận</Button>{' '}
+                    <Button color='secondary' className='px-3' onClick={() => { this.toggle() }}> Đóng</Button>
                 </ModalFooter>
             </Modal>
 

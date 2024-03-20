@@ -2,10 +2,7 @@ export const adminMenu = [
     { //Quản lý người dùng 
         name: 'Quản lý người dùng', menus: [
             {
-                name: 'Thêm tài khoản', link: '/system/user-manage'
-            },
-            {
-                name: 'Thông tin tài khoản', link: '/system/user-manage'
+                name: 'Quản lý người dùng', link: '/system/user-manage'
             },
         ]
         // ]

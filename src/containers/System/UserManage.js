@@ -51,7 +51,6 @@ class UserManage extends Component {
     createNewUser = async (data) => {
         try {
             let response = await createUser(data)
-            console.log('res create user :', response)
             if (response && response.errCode !== 0) {
                 alert(response.errMessage)
             } else {
@@ -109,7 +108,6 @@ class UserManage extends Component {
 
     render() {
         let arrUsers = this.state.arrUsers;
-        console.log(arrUsers)
         return (
             <div className="users-container">
                 <ModalUser
@@ -145,7 +143,7 @@ class UserManage extends Component {
                                 <th>Email</th>
                                 <th>Vai trò</th>
                                 <th>Thông tin thêm</th>
-                                <th>Actions</th>
+                                <th>Hành động</th>
                             </tr>
                             {arrUsers && arrUsers.map((item, index) => {
                                 return (
