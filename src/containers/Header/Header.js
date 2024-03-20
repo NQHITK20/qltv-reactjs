@@ -45,11 +45,7 @@ class Header extends Component {
                     <Navigator menus={this.state.menuApp} />
                 </div>
                 <div className='languages'>
-                    <span className='welcum'><FormattedMessage id="home-header.welcum" /> {userInfo && userInfo.firstName ? userInfo.firstName : ''}</span>
-                    <span className={language === languages.VI ? 'language-vi active' : 'language-vi'}
-                        onClick={() => this.switchVE(languages.VI)}>VN</span>
-                    <span className={language === languages.EN ? 'language-en active' : 'language-en'}
-                        onClick={() => this.switchVE(languages.EN)}>EN</span>
+                    <span className='welcum'>Xin chào {userInfo && userInfo.firstName ? userInfo.firstName : ''}</span>
                     {/* nút logout */}
                     <div className="btn btn-logout" onClick={processLogout} title="log out">
                         <i className="fas fa-sign-out-alt"></i>

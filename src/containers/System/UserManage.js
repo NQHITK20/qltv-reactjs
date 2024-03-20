@@ -69,7 +69,6 @@ class UserManage extends Component {
 
 
     handleDeleteUser = async (user) => {
-        // console.log('click delete', user)
         try {
             let res = await deleteUserService(user.id)
             if (res && res.errCode === 0) {
@@ -126,19 +125,26 @@ class UserManage extends Component {
                         editUser={this.doEditUser}
                     />
                 }
-                <div className='title text-center'>Manage users with Eric</div>
-                <div className="mx-1">
-                    <button
-                        onClick={() => this.handleAddNewUser()} className="btn btn-primary px-3"><i className="fas fa-plus"></i>  Add new user</button>
+                <div className='title text-center'>Quản lý người dùng</div>
+                <div className="mx-1 mt-2">
+                    <button onClick={() => this.handleAddNewUser()} className="btn btn-primary px-3">Thêm người dùng</button>
+                </div>
+                <div className="mx-1 mt-2">
+                    <button onClick={() => this.handleAddNewUser()} className="btn btn-primary px-3"> Xoá nhiều</button>
+                </div>
+                <div className="mx-1 mt-2">
+                    <button onClick={() => this.handleAddNewUser()} className="btn btn-primary px-3"> Sắp xếp</button>
                 </div>
                 <div className='users-table  mt-4 mx-1'>
                     <table id="customers">
                         <tbody>
                             <tr>
+                                <th>Họ và Tên</th>
+                                <th>Tài khoản</th>
+                                <th>Mật khẩu</th>
                                 <th>Email</th>
-                                <th>First name</th>
-                                <th>Last name</th>
-                                <th>Address</th>
+                                <th>Vai trò</th>
+                                <th>Thông tin thêm</th>
                                 <th>Actions</th>
                             </tr>
                             {arrUsers && arrUsers.map((item, index) => {
@@ -147,6 +153,8 @@ class UserManage extends Component {
                                         <td>{item.email}</td>
                                         <td>{item.firstName}</td>
                                         <td>{item.lastName}</td>
+                                        <td>{item.lastName}</td>
+                                        <td>{item.address}</td>
                                         <td>{item.address}</td>
                                         <td>
                                             <button className='btn-edit' onClick={() => this.handleEditUser(item)}><i className="fas fa-pencil-alt"></i></button>

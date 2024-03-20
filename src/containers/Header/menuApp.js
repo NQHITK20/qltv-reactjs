@@ -1,41 +1,47 @@
 export const adminMenu = [
     { //Quản lý người dùng 
-        name: 'menu.admin.manage-shit', menus: [
+        name: 'Quản lý người dùng', menus: [
             {
-                name: 'menu.admin.crud', link: '/system/user-manage'
+                name: 'Thêm tài khoản', link: '/system/user-manage'
             },
             {
-                name: 'menu.admin.crud-redux', link: '/system/user-redux'
-            },
-            {
-                name: 'menu.admin.manage-doctor', link: '/system/manage-doctor',
-            },
-            {
-                name: 'menu.doctor.manage-schedule', link: '/doctor/manage-schedule'
+                name: 'Thông tin tài khoản', link: '/system/user-manage'
             },
         ]
         // ]
     },
-    { //Quản lý phòng khám 
-        name: 'menu.admin.clinic', menus: [
+    { //Quản lý sách
+        name: 'Quản lý sách', menus: [
             {
-                name: 'menu.admin.manage-clinic', link: '/system/manane-clinic'
+                name: 'Thêm sách', link: '/system/manane-clinic'
             },
+            {
+                name: 'Quản lý sách', link: '/system/manane-b'
+            }
         ]
     },
-    { //Quản lý chuyên khoa
-        name: 'menu.admin.specialty',
+    { //Quản lý mượn sách
+        name: 'Quản lý mượn sách',
         menus: [
             {
-                name: 'menu.admin.manage-specialty', link: '/system/manane-specialty'
+                name: 'Thêm đơn mượn sách', link: '/system/manane-specialty'
+            },
+            {
+                name: 'Quản lý mượn sách', link: '/system/manane-specialty'
             },
         ]
     },
-    { //Quản lý cẩm nang 
-        name: 'menu.admin.handbook', menus: [
+    { //Quản lý Content 
+        name: 'Quản lý nội dung trang', menus: [
             {
-                name: 'menu.admin.manage-handbook', link: '/system/manane-handbook'
+                name: 'Sách', link: '/system/manane-handbook'
             },
+            {
+                name: 'Loại Sách', link: '/system/manane-handbook'
+            },
+            {
+                name: 'Thông tin thêm', link: '/system/manane-handbook'
+            }
         ]
     },
 ];

@@ -23,8 +23,6 @@ class System extends Component {
                             <Route path="/system/manage-doctor" component={manageDoctor} />
                             <Route path="/system/manane-specialty" component={ManageSpecialty} />
                             <Route path="/system/manane-clinic" component={ManageClinic} />
-
-
                             <Route component={() => { return (<Redirect to={systemMenuPath} />) }} />
                         </Switch>
                     </div>
