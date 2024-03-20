@@ -110,7 +110,7 @@ class ModalUser extends Component {
                         </div>
                         <div className='input-container'>
                             <label>Vai trò</label>
-                            <select classname="" id="cars" >
+                            <select className="role">
                                  <option value="1">Admin</option>
                                  <option value="2">User</option>
                             </select>

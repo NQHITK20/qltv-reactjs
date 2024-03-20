@@ -62,10 +62,10 @@
             display       : flex;
             flex-direction: column;
             width         : 49%;
+            font-size: larger;
 
-
-            &.max-width-input {
-                width: 100%;
+            .role{
+                margin-right: auto ;
             }
 
             input {
