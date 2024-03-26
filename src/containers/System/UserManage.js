@@ -9,7 +9,6 @@ import { bind, reject } from 'lodash';
 import { emitter } from '../../utils/emmiter';
 
 class UserManage extends Component {
-
     constructor(props) {
         super(props);
         this.state = {
@@ -55,7 +54,7 @@ class UserManage extends Component {
                 alert(response.errMessage)
             } else {
                 await this.getAllUsersFromReact()
-                alert('tạo ngon r');
+                alert('tạo thành công');
                 this.setState({
                     isOpenModalUser: false
                 })
@@ -72,7 +71,7 @@ class UserManage extends Component {
             let res = await deleteUserService(user.id)
             if (res && res.errCode === 0) {
                 await this.getAllUsersFromReact()
-                alert('xóa ngon r');
+                alert('xóa thành công');
             } else {
                 alert(res.errMessage)
             }
@@ -123,20 +122,22 @@ class UserManage extends Component {
                         editUser={this.doEditUser}
                     />
                 }
-                <div className='title text-center'>Quản lý người dùng</div>
+                <div className='title text-center mt-20'>Quản lý người dùng</div>
+                <div className='search'>
+                <i className="fas fa-search"></i>
+                <input type='text' placeholder='Tìm kiếm ...' />
+               </div>
                 <div className="mx-1 mt-2">
-                    <button onClick={() => this.handleAddNewUser()} className="btn btn-primary px-3">Thêm người dùng</button>
+                    <button onClick={() => this.handleAddNewUser()} className="btn btn-primary px-3"> <i className="fas fa-plus-circle"> Thêm người dùng</i></button>
                 </div>
                 <div className="mx-1 mt-2">
-                    <button onClick={() => this.handleAddNewUser()} className="btn btn-primary px-3"> Xoá nhiều</button>
-                </div>
-                <div className="mx-1 mt-2">
-                    <button onClick={() => this.handleAddNewUser()} className="btn btn-primary px-3"> Sắp xếp</button>
+                    <button onClick={() => this.handleAddNewUser()} className="btn btn-primary px-3"><i className="fas fa-file"></i> Xuất thông tin</button>
                 </div>
                 <div className='users-table  mt-4 mx-1'>
                     <table id="customers">
                         <tbody>
                             <tr>
+                                <th>STT</th>
                                 <th>Họ và Tên</th>
                                 <th>Tài khoản</th>
                                 <th>Mật khẩu</th>
@@ -148,12 +149,12 @@ class UserManage extends Component {
                             {arrUsers && arrUsers.map((item, index) => {
                                 return (
                                     <tr>
-                                        <td>{item.email}</td>
-                                        <td>{item.firstName}</td>
-                                        <td>{item.lastName}</td>
-                                        <td>{item.lastName}</td>
-                                        <td>{item.address}</td>
-                                        <td>{item.address}</td>
+                                        <td>{item.id}</td>
+                                        <td>{item.fullname}</td>
+                                        <td>{item.username}</td>
+                                        <td>{item.password}</td>
+                                        <td>{item.role}</td>
+                                        <td>{item.description}</td>
                                         <td>
                                             <button className='btn-edit' onClick={() => this.handleEditUser(item)}><i className="fas fa-pencil-alt"></i></button>
                                             <button className='btn-delete' onClick={() => this.handleDeleteUser(item)}><i className="fas fa-trash"></i></button>

@@ -15,12 +15,7 @@ class About extends Component {
                     <h1>Truyền thông nói gì về Dr.Johnny Sins</h1>
                     <div className='section-about-content'>
                         <div className='about-left'>
-                            <iframe
-                                width="55%" height="400px"
-                                src="https://www.youtube.com/embed/J59y_WWDWwo"
-                                title="Câu Chuyện Cảm Động Về Huyền Thoại Johnny Sins"
-                                frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-                            gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/yrpFToCoxwM?si=vYJRnNPQi9GBwW0K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
                         <div className='about-left'></div>
                     </div>

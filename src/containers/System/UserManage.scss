@@ -79,3 +79,26 @@
     }
 
 }
+.users-container{
+    .search {
+        width           : fit-content;
+        justify-content : center;
+        align-items     : center;
+        margin          : 0 0 0 auto;
+        padding         : 10px;
+        border-radius   : 25px;
+        background-color: #bbeecc;
+
+        i {
+            margin: 0 5px;
+        }
+
+        input {
+            height    : 30px;
+            width     : 360px;
+            background: transparent;
+            border    : none;
+            outline   : none;
+        }
+    }
+}

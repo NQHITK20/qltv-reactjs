@@ -62,7 +62,7 @@ export const createNewUSer = (data) => {
             if (res && res.errCode === 0) {
                 dispatch(saveUserSuccess());
                 dispatch(fetchAllUsersStart());
-                toast.success("TẠO THÀNH CÔNG 1 CHÁU");
+                toast.success("TẠO THÀNH CÔNG 1 Tài khoản");
             } else {
                 dispatch(saveUserFailed());
             }
