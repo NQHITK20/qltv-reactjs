@@ -13,7 +13,7 @@ class ModalUser extends Component {
             username: '',
             password: '',
             email: '',
-            role: '',
+            role: 'R1',
             description: '',
         }
         this.listenToEmiiter();
@@ -27,7 +27,7 @@ class ModalUser extends Component {
                 username: '',
                 password: '',
                 email: '',
-                role: '',
+                role: 'R1',
                 description: '',
             })
         })
@@ -47,15 +47,16 @@ class ModalUser extends Component {
         copyState[id] = event.target.value;
 
         this.setState({
-            ...copyState
+            ...copyState,
         })
     }
-    // fullname: '',
-    // username: '',
-    // password: '',
-    // email: '',
-    // role: '',
-    // descriotion: '',
+    handleOnchangeRole =(event)=>{
+        let role2 = event.target.value
+        console.log('check vả role :',role2)
+        this.setState({
+            role : role2
+        })
+    }
     checkValidateInput = () => {
         let check = true
         let arrInput = ['fullname', 'username', 'password', 'email','description'];
@@ -75,9 +76,11 @@ class ModalUser extends Component {
             this.props.createNewUser(this.state)
         }
     }
+   
 
 
     render() {
+        console.log('check state: ',this.state)
         return (
             <Modal
                 isOpen={this.props.isOpen} togle={() => { this.toggle() }} className={'ModalContainer'}
@@ -110,9 +113,9 @@ class ModalUser extends Component {
                         </div>
                         <div className='input-container'>
                             <label>Vai trò</label>
-                            <select className="role">
-                                 <option value="1">Admin</option>
-                                 <option value="2">User</option>
+                            <select className="role" onChange={(event) =>{this.handleOnchangeRole(event,"role")}}>
+                                 <option value="R1">Admin</option>
+                                 <option value="R2">User</option>
                             </select>
                         </div>
                     </div>

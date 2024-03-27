@@ -59,12 +59,15 @@ export const createNewUSer = (data) => {
     return async (dispatch, getState) => {
         try {
             let res = await createUser(data);
+            console.log('check req data: ',res)
             if (res && res.errCode === 0) {
                 dispatch(saveUserSuccess());
                 dispatch(fetchAllUsersStart());
                 toast.success("TẠO THÀNH CÔNG 1 Tài khoản");
             } else {
                 dispatch(saveUserFailed());
+                toast.error("TẠO không THÀNH CÔNG");
+
             }
         } catch (e) {
             dispatch(saveUserFailed())
@@ -119,8 +122,6 @@ export const fetchAllUsersStart = () => {
     return async (dispatch, getState) => {
         try {
             let res = await getAllUsers("ALL")
-            let res1 = await getTopDoctorHome(3)
-            console.log('check top doctor', res1)
             if (res && res.errCode === 0) {
                 dispatch(fetchAllUsersSuccess(res.users.reverse()));
             } else {
